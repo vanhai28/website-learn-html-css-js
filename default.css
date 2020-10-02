@@ -226,3 +226,10 @@ footer {
     }
 }
 
+.footer-text
+{
+    font-size: 1vw;
+    padding: 1vw;
+    letter-spacing: 0.09vw;
+}
+
