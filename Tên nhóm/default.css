@@ -1,0 +1,228 @@
+/*
+** RESET
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+.btn {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px auto;
+    color: #f3f3f3;
+    padding: 10px 15px;
+    background-color: rgba(32, 7, 155,0.8);
+    border-radius: 10px;
+    transition: all 0.3s;
+    text-transform: capitalize;
+}
+.btn:hover {
+    transform: scale(1.02);
+    background-color: rgb(65, 32, 230);
+}
+/*
+** HOME PAGE
+*/
+/*
+** HEADER
+*/
+header {
+
+    background: -webkit-linear-gradient(to right, rgb(55, 29, 184), rgba(20, 124, 168, 0.8)  ),url("./images/Background.jpg");  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right,rgb(55, 29, 184), rgba(20, 124, 168, 0.8)  ),url("./images/Background.jpg") ; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #f3f3f3;
+    -webkit-clip-path:ellipse(90% 60% at 50% 30%);
+    clip-path: ellipse(90% 60% at 50% 30%);
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto ;  
+}
+header .grid-container {
+     padding: 5% 5%;
+    text-align: left ;
+    padding-top: 10%;
+}
+/*
+** Intro section
+*/
+#intro-section {
+    width: 100%;
+    padding: 12vh 0px 0px 10%;
+}
+.name-of-team {
+    text-transform: capitalize;
+    font-size: 3em;
+    font-family: 'Pacifico', cursive;
+}
+p.about-team {
+    margin-top: 20px;
+    line-height: 170%;
+    width: 80%;
+}
+.grid-item img{
+    width: 100%;
+    display: inline-block;
+}
+.team-photo img{
+    box-shadow: 0 0 30px rgb(18, 7, 73);
+}
+.name-of-team {
+    animation: moveLeft 1.2s;
+}
+p.about-team {
+    animation: moveLeft 1.7s ;
+}
+header .btn {
+    animation: popUp 2s;
+}
+.team-photo img {
+    animation: zoomIn 2s;
+}
+@keyframes moveLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+  
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes popUp {
+    0% {
+         opacity: 0;
+        transform: translateY(10px);
+    }
+    95% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes zoomIn {
+     0% {
+         opacity: 0;
+        width: 80%;
+    }
+
+
+    100% {
+        opacity: 1;
+        width: 100%;
+    }
+}
+/*
+**  CONTAINER
+*/
+.container.grid-container {
+    padding: 0% 5%;
+    
+}
+
+.heading-section {
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(5, 71, 129);
+    font-weight: 900;
+    margin-bottom: 5%;
+    text-transform: capitalize;
+}
+#member-section .grid-item {
+    padding: 0px 10%;
+    text-align: center;
+    box-shadow: 0 0 15px rgb(5, 71, 129);
+    margin: 0 15px 20px 15px;
+    padding: 30px 10px;
+    border-radius: 10px;
+   transition: all 0.5s;
+}
+
+#member-section .grid-item:hover {
+    transform: scale(1.05);
+}
+img.img-member {
+    display: inline-block;
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 30px;
+}
+.infor-member {
+    line-height: 150%;
+}
+.up-btn {
+    text-align: center;
+    display: block;
+}
+
+/*
+**  FOOTER
+*/
+footer {
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+    color: #f3f3f3;
+    text-transform: capitalize;
+}
+
+
+
+@media screen and (max-width:767px) {
+    header {
+        text-align: center;
+         clip-path: ellipse(90% 60% at 50% 35%);
+    }
+    header .grid-container{
+        padding: 10px;
+    }
+   .grid-container {
+        display: block;
+       
+    }
+    .grid-item.team-photo {
+        width: 60%;
+    }
+    .name-of-team {
+        font-size: 2.5em;
+        text-align: center;
+    }
+    p.about-team {
+        text-align: center;
+        width: 80%;
+    }
+    .grid-item {
+        width: 100%;
+        margin: 30px auto;
+    }
+    .btn-header {
+        text-align: center;
+    }
+    .btn-header .btn {
+        margin: 0;
+    }
+}
+@media screen and (max-width:411px) {
+    header {
+        text-align: center;
+        height: 80vh;
+    }
+}
+
