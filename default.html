@@ -4,94 +4,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introduce my team</title>
     <link rel="stylesheet" href="default.css">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+
+    <title>Introduce my team</title>
 </head>
 
 <body>
     <header id="header">
         <div class="grid-container">
-            <div id="intro-section grid-item">
-                <h3 class="name-of-team">
-                    team ngáo ngơ
-                </h3>
-                <p class="about-team grid-item">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis nesciunt temporibus possimus a
-                    cupiditate porro eum esse hic et. Sit nulla eius odio reiciendis animi cum alias cupiditate harum
-                    quibusdam.
-                </p>
-                <div class="btn-header">
-                    <a class="btn btn-move" href="#member-section">Các thành viên</a>
+            <div class="content-header">
+                <div id="intro-section grid-item">
+                    <h3 class="name-of-team">
+                        team ngáo ngơ
+                    </h3>
+                    <p class="about-team grid-item">
+                        Xin chào tất cả mọi người!<br>
+                        Nhóm tụi mình gồm 3 thành viên đến từ 18CTT3-FIT-HCMUS. Đây là website giới thiệu của chúng
+                        mình. Hy
+                        vọng các bạn sẽ thích nó.
+                    </p>
+
                 </div>
             </div>
+
             <div class="team-photo grid-item">
-                <img src="https://www.w3schools.com/html/workplace.jpg" usemap="#workmap" alt="">
+                <img id="my_image" src="./images/group_image.jpg" usemap="#workmap" alt="group_image">
 
                 <map name="workmap">
-                    <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
-                    <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
-                    <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+                    <area shape="poly"
+                        coords="81,295,157,71,361,59,521,247,403,509,343,571,339,643,611,839,691,931,3,931,3,679,97,631,115,533,93,439,57,441,51,307"
+                        alt="Hiep" title="Hiep" href="/members/18120365/18120365.html">
+                    <area shape="poly"
+                        coords="497,757,535,727,535,691,517,631,493,625,469,537,495,531,485,411,603,325,723,367,751,405,763,509,769,537,749,601,745,653,715,707,715,723,751,725,773,767,939,837,987,931,689,931,635,855,503,765"
+                        alt="Hao" title="Hao" href="/members/18120354/18120354.html">
+                    <area shape="poly"
+                        coords="875,795,1031,647,1035,625,977,577,965,535,931,479,911,425,911,349,969,281,1159,287,1187,333,1193,379,1205,397,1215,451,1195,487,1203,553,1217,597,1241,613,1241,931,995,933,941,841,873,809"
+                        alt="Hai" title="Hai" href="/members/18120350/18120350.html">
                 </map>
             </div>
         </div>
     </header>
-    <div class="container grid-container">
 
-        <div id="member-section">
-            <h3 class="heading-section">
-                Các thành viên
-            </h3>
-            <div class="grid-container intro-member">
-                <div class="grid-item">
-                    <a href="#">
-                        <img class="img-member"
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1200px-Image_created_with_a_mobile_phone.png"
-                            alt="">
-                    </a>
-                    <p class="infor-member">Lorem ipsum dolor sit amet consectetur
-                        <br>
-                        Email: Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
-                </div>
-                <div class="grid-item">
-                    <a href="#">
-                        <img class="img-member"
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1200px-Image_created_with_a_mobile_phone.png"
-                            alt="">
-                    </a>
-                    <p class="infor-member">Lorem ipsum dolor sit amet consectetur
-                        <br>
-                        Email: Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
 
-                </div>
-                <div class="grid-item">
-                    <a href="#">
-                        <img class="img-member"
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1200px-Image_created_with_a_mobile_phone.png"
-                            alt="">
-                    </a>
-                    <p class="infor-member">Lorem ipsum dolor sit amet consectetur
-                        <br>
-                        Email: Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
-                </div>
+    <div id="member-section">
+        <h3 class="heading-section">
+            Các thành viên
+        </h3>
+        <div class="grid-container intro-member">
+            <div class="grid-item tag-infor">
+                <a href="/members/18120350/18120350.html">
+                    <img class="img-member" src="./members/18120350/images/hai_avatar.png" alt="hai_avatar">
+                </a>
+                <h3>Nguyễn Văn Hải</h3>
+            </div>
 
+            <div class="grid-item tag-infor ">
+                <a href="/members/18120354/18120354.html">
+                    <img class="img-member" src="./members/18120354/images/avt_hao.jpg" alt="hao_avatar">
+                </a>
+                <h3>Lê Anh Hào</h3>
+            </div>
+
+            <div class="grid-item tag-infor">
+                <a href="/members/18120365/18120365.html">
+                    <img class="img-member" src="./members/18120365/images/avt_hiep.jpg" alt="hiep_avatar">
+                </a>
+                <h3>Nguyễn Quang Hiệp</h3>
             </div>
 
         </div>
+
 
     </div>
     <div class="up-btn">
         <a href="#header" class="btn tbn-move"><i class="fas fa-chevron-circle-up"></i></a>
     </div>
     <footer>
-        <p class="footer-text">
-            design by team ngáo ngơ
+        <p>
+            Copyright &copy; 2020 by Ngao Ngo Team. All rights reserved.
         </p>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">
+        </script>
+
+    <script src="/imageMapResizer.min.js"></script>
+    <script>
+        $('map').imageMapResize()
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </body>
 
